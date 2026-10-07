@@ -4,7 +4,7 @@ while operador != 2:
 
     print("=============================================")
 
-    print("Controle Financeiro")
+    print("Controle de Gato/Financeiro")
 
     print("=============================================")
 

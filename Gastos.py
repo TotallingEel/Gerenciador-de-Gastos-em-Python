@@ -81,7 +81,7 @@ while operador != 2:
 
                         print("Inválido")
                 
-                valorGasto = float(input("Digite o valor do gasto \n"))
+                valorGasto = float(input("Digite o valor do gasto: \n"))
 
             case 3:
 

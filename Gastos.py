@@ -9,8 +9,8 @@ while operador != 2:
     print("=============================================")
 
     print("1 - Informar Renda Mensal")
-    print("2 - Cadastrar gasto")
-    print("3 - Consultar gastos")
+    print("2 - Cadastrar gasto mensal ")
+    print("3 - Consultar gastos mensal")
     print("4 - Consultar situação financeira")
     print("5 - Ver estatísticas")
     print("6 - Sair")

@@ -37,7 +37,7 @@ while operador != 2:
         match escolha:
             case 1:
                 
-                renda = float(input("Informe sua renda:\n"))
+                renda = float(input("Informe sua renda mensal:\n"))
                 
             case 2:
                 

@@ -20,14 +20,14 @@ while operador != 2:
     valido = 0
     while valido == 0: 
 
-        entrada = input("Digite a opção: ")
+        entrada = input("Digite uma opção: ")
 
         valido = 1
 
         for i in range(len(entrada)):
             caractere = entrada[i]
             if not('0' <= caractere <= '9'):
-                print("Inválido, Tente Novamente \n")
+                print("Ocorreu um erro, Tente Novamente \n")
                 valido = 0
                 break
 

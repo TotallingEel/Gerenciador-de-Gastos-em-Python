@@ -5,9 +5,7 @@ gastos = []
 while operador != 2:
 
     print("=============================================")
-
     print("Controle de Gato/Financeiro")
-
     print("=============================================")
 
     print("1 - Informar Renda Mensal")
@@ -87,17 +85,17 @@ while operador != 2:
 
                         print("Inválido")
 
-            case 3:
-
-                print ("Seus gastos:")
-
                 valorGasto = float(input("Digite o valor do gasto: \n"))
 
                 gastos.append({ "categoria": nome_categoria,"valor": valorGasto})
 
+            case 3:
+
+                print ("Seus gastos:")
+
                 for gasto in gastos:
                     print (f"Categoria: {gasto['categoria']}")
-                    print (f"Valor: {gasto['Valor']}")
+                    print (f"Valor: {gasto['valor']}")
                 
             case 4:
 
@@ -126,7 +124,7 @@ while operador != 2:
                 print(f"Gasto: {valorGasto}")
                 print(f"Saldo: {saldo}")
                 print(f"Situação do Saldo: {saldo_status}")
-               
+                
             case 6:
                 print("Até Mais")
                 operador = 2

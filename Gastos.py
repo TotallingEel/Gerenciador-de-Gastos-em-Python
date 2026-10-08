@@ -24,6 +24,10 @@ while operador != 2:
 
         entrada = input("Digite uma opção: ")
 
+        if entrada == "":
+            print("Inválido")
+            continue
+
         valido = 1
 
         for i in range(len(entrada)):
@@ -82,17 +86,18 @@ while operador != 2:
                     case _:
 
                         print("Inválido")
-                
-                valorGasto = float(input("Digite o valor do gasto: \n"))
-
-gastos.append({ "categoria": nome_categoria,"valor": valorGasto})
 
             case 3:
 
                 print ("Seus gastos:")
-for gasto in gastos:
-print (f"Categoria: {gasto['categoria']}")
-print (f"Valor: {gasto['Valor']}")
+
+                valorGasto = float(input("Digite o valor do gasto: \n"))
+
+                gastos.append({ "categoria": nome_categoria,"valor": valorGasto})
+
+                for gasto in gastos:
+                    print (f"Categoria: {gasto['categoria']}")
+                    print (f"Valor: {gasto['Valor']}")
                 
             case 4:
 
@@ -121,10 +126,9 @@ print (f"Valor: {gasto['Valor']}")
                 print(f"Gasto: {valorGasto}")
                 print(f"Saldo: {saldo}")
                 print(f"Situação do Saldo: {saldo_status}")
-                
-                
+               
             case 6:
                 print("Até Mais")
                 operador = 2
             case _:
-                print("Opção Inválida")
+                print("Opção Inválida")
